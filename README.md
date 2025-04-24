@@ -1,5 +1,5 @@
 
-# 📊 IE6400 Project: Network & Word Frequency Analysis
+## Network & Word Frequency Analysis
 
 **Author**: Rosalina Torres  
 **Program**: M.S. Data Analytics Engineering @ Northeastern University  
@@ -8,71 +8,93 @@
 
 ---
 
-## 🔍 Project Overview
+## 🔍 Keyword Network Graph from Academic Abstracts
 
-This project explores the hidden structures and patterns within textual data using network analysis and word frequency techniques. The goal? To identify **prominent keyword associations** and map out **semantic relationships** that power modern NLP applications.
-
-We dive deep into:
-- Co-occurrence matrix construction
-- Weighted network graph visualization
-- Top-n keyword frequency extraction
-- Contextual keyword mapping
+This project transforms raw academic keyword metadata into a structured, semantic network graph. Designed to reveal the hidden architecture of thematic clusters and conceptual interrelations, the pipeline demonstrates how textual signals can be shaped into relational insights using foundational data wrangling and graph analytics techniques.
 
 ---
 
-## 🎯 Key Takeaways
+## 🚀 Project Objective
 
-This analysis supports real-world use cases such as:
-- **🧠 Topic Modeling**: Reveal dominant themes in datasets
-- **🔎 Search Optimization**: Enhance information retrieval via context-aware keywords
-- **📝 Text Summarization**: Surface essential concepts quickly
-- **📚 Domain Terminology Mining**: Understand linguistic patterns in specific fields
+To build a weighted, undirected graph from academic article keywords, where:
 
----
-
-## 📈 Business Value
-
-Imagine a tech firm analyzing customer support tickets:  
-> With co-occurrence mapping, you'd know which pain points cluster together — leading to smarter product updates and better support workflows.
-
-Or a legal team reviewing massive documents:  
-> Keyword networks flag recurring legal clauses and concepts — boosting contract review speed and accuracy.
+- **Nodes** represent unique keywords.
+- **Edges** reflect co-occurrence frequency within the same article.
+- **Edge Weights** quantify the strength of each semantic relationship.
 
 ---
 
-## 🛠️ Technical Highlights
+## 🛠️ Methodology Overview
 
-- Tokenization and lemmatization using **NLTK**
-- Co-occurrence matrix with **window-based proximity**
-- Network graphs with **NetworkX** (weighted edges, labeled nodes)
-- Keyword filtering via **stopword removal + frequency thresholds**
-- Visualization using **Matplotlib** for interpretability
+### 1. **Data Cleaning & Preprocessing**
+- Lowercasing, punctuation removal, and whitespace normalization.
+- Preservation of multi-word academic phrases (e.g., *corporate governance*).
+- Removal of English stopwords.
+- Filtering out rows with missing or non-informative keyword data.
 
----
+### 2. **Keyword Extraction & Transformation**
+- Keywords for each article are isolated, cleaned, and converted into list format.
+- These keyword lists are used to generate co-occurrence pairs.
 
-## ✅ Portfolio-Ready
+### 3. **Modeling Semantic Relationships**
+- Construction of a co-occurrence dictionary using unique keyword pairs.
+- Generation of a symmetric, zero-diagonal adjacency matrix to quantify relationships.
 
-This notebook was revised for professional showcasing.  
-Well-commented code, visual insights, and clear business interpretations make it ideal for:
-- Recruiter review
-- Peer feedback
-- Collaboration and reuse
-
----
-
-## 📂 How to Use
-
-1. Clone the repo or download the notebook
-2. Open `IE6400_P3_Portfolio_Ready.ipynb` in Jupyter or VS Code
-3. Run all cells
-4. Customize it to fit your own dataset or business context!
+### 4. **Network Graph Construction**
+- Creation of a weighted, undirected graph using NetworkX.
+- Edge weights reflect the frequency of keyword co-occurrences.
+- The resulting graph visually and analytically reveals central themes and keyword connectivity.
 
 ---
 
-## 🙌 Let’s Connect
+## 📊 Technologies Used
 
-I'm actively seeking data analytics and tech-forward sales roles.  
-Let’s turn insights into impact.
+- **Python** (Pandas, NetworkX, Matplotlib, NLTK)
+- **Jupyter Notebook** for step-by-step exploration
+- **Data Source**: Academic articles keyword metadata (`articles.csv`)
 
-📧 rosalina7torres@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/rosalina2)
+---
+
+## 📁 Repository Structure
+
+📦 keyword-network-project/
+┣ 📄 articles.csv
+┣ 📄 keyword_network.ipynb
+┣ 📄 README.md
+
+---
+
+## 🔮 Insights
+
+- Central keywords emerge as hubs, indicating thematic importance.
+- Clusters of co-occurring terms suggest natural topic groupings.
+- The graph structure reveals not just frequency—but **relationship strength** between academic concepts.
+
+---
+
+## 📚 Applications
+
+This approach is foundational for:
+- Topic modeling and curriculum analysis
+- Knowledge mapping in literature reviews
+- Graph-based machine learning pipelines
+
+---
+
+## ✨ Author  
+**Rosalina Torres**  
+M.S. in Data Analytics Engineering Candidate  
+College of Engineering, Northeastern University  
+
+---
+
+## 📬 Contact
+
+- 📧 [rosalina7torres@gmail.com](mailto:rosalina7torres@gmail.com)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/rosalina2)
+
+---
+
+## 💡 Acknowledgments
+
+A beginner's mind in the world of data engineering.
