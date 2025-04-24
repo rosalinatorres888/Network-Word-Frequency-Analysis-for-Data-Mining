@@ -51,16 +51,16 @@ To build a weighted, undirected graph from academic article keywords, where:
 
 - **Python** (Pandas, NetworkX, Matplotlib, NLTK)
 - **Jupyter Notebook** for step-by-step exploration
-- **Data Source**: Academic articles keyword metadata (`articles.csv`)
+- **Data Source**: Academic articles keyword metadata (`Keyword_data.csv`)
 
 ---
 
 ## 📁 Repository Structure
 
-📦 keyword-network-project/
-┣ 📄 articles.csv
-┣ 📄 keyword_network.ipynb
-┣ 📄 README.md
+articles-dataset/
+├── DataMiningProject.ipynb      # Main notebook with all analysis
+├── Keyword_data.csv             # Dataset used in the project
+├── README.md                    # This file
 
 ---
 
