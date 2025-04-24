@@ -57,14 +57,14 @@ To build a weighted, undirected graph from academic article keywords, where:
 
 ## 📁 Repository Structure
 
+```
 articles-dataset/
 ├── DataMiningProject.ipynb      # Main notebook with all analysis
 ├── Keyword_data.csv             # Dataset used in the project
 ├── README.md                    # This file
+```
 
 ---
-
-Insights derived from this project support a range of technical and business applications, including:
 
 ## **Technical Applications**
 - **Topic Modeling** – Identify dominant and latent themes across documents.  
