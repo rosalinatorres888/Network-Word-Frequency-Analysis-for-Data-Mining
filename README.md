@@ -201,11 +201,6 @@ Construct a weighted, undirected graph that reveals latent thematic structures b
 - **Centrality Analysis**: Revealed the most influential keywords based on various network metrics
 - **Structural Patterns**: Mapped the hierarchical organization of knowledge within the dataset
 
-<div align="center">
-  <img src="network_visualization.png" width="80%" alt="Network visualization of keyword co-occurrences"/>
-  <p><em>Network visualization of keyword co-occurrences showing thematic clusters and central nodes</em></p>
-</div>
-
 ---
 
 ## 📁 Repository Structure
