@@ -17,6 +17,12 @@ This project applies network science and text mining to uncover semantic relatio
 - **Nodes** = individual keywords  
 - **Edges** = frequency of co-occurrence  
 - **Edge Weights** = strength of keyword connection
+## Network Visualization
+
+This project includes network analysis of keyword co-occurrences. Here's a visualization of the network:
+
+![Keyword Co-occurrence Network](network.png)
+
 
 This project demonstrates how data mining and visualization can enhance content discovery, research mapping, and thematic analysis.
 
