@@ -23,6 +23,8 @@ This project includes network analysis of keyword co-occurrences. Here's a visua
 
 ![Keyword Co-occurrence Network](Strong_Network_Connection.png)
 
+![Keyword Co-occurrence Network](large_network2.png)
+
 
 This project demonstrates how data mining and visualization can enhance content discovery, research mapping, and thematic analysis.
 
