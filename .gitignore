@@ -1,1 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
 .ipynb_checkpoints/
+*.pyc
+
+# Data
+*.csv
+data/raw/
+data/processed/
+
+# Outputs
+outputs/
+*.png
+*.html
+
+# Virtual Environment
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Project specific
+DataMiningProject_executed.ipynb
+.ipynb_checkpoints/
+Untitled.ipynb
